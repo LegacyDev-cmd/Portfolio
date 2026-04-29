@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Emanuele Gensabella - Legacy Dev</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body data-page="home">
+  <div class="background">
+    <div class="blur-circle circle1"></div>
+    <div class="blur-circle circle2"></div>
+  </div>
+
+  <header>
+    <div class="container">
+      <a class="brand" id="brand-home" href="index.html" aria-label="Vai alla Home">
+        <div class="brand-logo">
+          <img src="assets/img/logo.png" alt="Legacy Dev logo" />
+        </div>
+        <div class="brand-info">
+          <div class="subtitle">Legacy&nbsp;Dev</div>
+        </div>
+      </a>
+      <nav>
+        <a class="nav-btn active" data-target="home" href="index.html">Home</a>
+        <a class="nav-btn" data-target="about" href="pages/chisono.html">Chi&nbsp;sono</a>
+        <a class="nav-btn" data-target="legacy" href="pages/legacy-dev.html">Legacy&nbsp;Dev</a>
+        <a class="nav-btn" data-target="skills" href="pages/competenze.html">Competenze</a>
+        <a class="nav-btn" data-target="portfolio" href="pages/portfolio.html">Portfolio</a>
+        <a class="nav-btn" data-target="awards" href="pages/riconoscimenti.html">Riconoscimenti</a>
+        <a class="nav-btn" data-target="contact" href="pages/contatto.html">Contatto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-kicker">Emanuele Gensabella / Legacy Dev</div>
+          <h1>
+            Esperienze interattive
+            <span class="gradient-text">tra design, codice e identità.</span>
+          </h1>
+          <p class="hero-intro">
+            Gameplay, interfacce web e strumenti tecnici progettati con attenzione a estetica, logica e usabilità.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-target="portfolio">
+              Entra nel portfolio
+              <i data-lucide="arrow-right"></i>
+            </button>
+            <button class="btn btn-outline" data-target="contact">Contattami</button>
+          </div>
+          <button class="scroll-down" data-target="about">
+            <i data-lucide="chevron-down"></i>
+            <span>Scopri il percorso</span>
+          </button>
+        </div>
+        <div class="hero-image">
+          <!-- Copper coloured blur behind the logo card -->
+          <div class="blur-copper"></div>
+          <!-- Logo card with gradient border and glass effect -->
+          <div class="logo-card">
+            <div class="logo-card-overlay"></div>
+            <div class="logo-inner">
+              <!-- Use the PNG logo for compatibility -->
+              <img src="assets/img/logo.png" alt="Legacy Dev logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="capabilities-overview">
+        <div class="capabilities-heading">
+          <span>Ambiti</span>
+        </div>
+        <div class="hero-features">
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="gamepad-2"></i></div>
+            <div>
+              <div class="feature-title">Unreal Engine</div>
+              <div class="feature-text">Gameplay, UI, prototipi</div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="layout-template"></i></div>
+            <div>
+              <div class="feature-title">Game Design</div>
+              <div class="feature-text">GDD, loop, puzzle</div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="book-open"></i></div>
+            <div>
+              <div class="feature-title">Worldbuilding</div>
+              <div class="feature-text">Narrativa e concept</div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="monitor-smartphone"></i></div>
+            <div>
+              <div class="feature-title">Web &amp; UI</div>
+              <div class="feature-text">Portfolio e interfacce</div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="code-2"></i></div>
+            <div>
+              <div class="feature-title">Programming</div>
+              <div class="feature-text">Python, Java, C++, PHP</div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+            <div>
+              <div class="feature-title">Cybersecurity</div>
+              <div class="feature-text">Analisi e hardening</div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="server"></i></div>
+            <div>
+              <div class="feature-title">Infrastructure</div>
+              <div class="feature-text">Homelab e networking</div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="panel-top"></i></div>
+            <div>
+              <div class="feature-title">Tools</div>
+              <div class="feature-text">Dashboard e pannelli</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About page -->
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">© 2026 Legacy&nbsp;Dev.</div>
+      <div class="footer-right">
+        <a class="footer-link" data-target="portfolio" href="pages/portfolio.html">Portfolio</a>
+        <a class="footer-link" data-target="awards" href="pages/riconoscimenti.html">Riconoscimenti</a>
+        <a class="footer-link" data-target="privacy" href="pages/privacy-policy.html">Privacy policy</a>
+        <a href="https://forms.gle/FoJF86DdL9w9EpJKA" target="_blank" rel="noopener" class="footer-link">Form di contatto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

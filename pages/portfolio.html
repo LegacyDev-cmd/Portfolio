@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Legacy Dev</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="../favicon.ico" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body data-page="portfolio">
+  <div class="background">
+    <div class="blur-circle circle1"></div>
+    <div class="blur-circle circle2"></div>
+  </div>
+
+  <header>
+    <div class="container">
+      <a class="brand" id="brand-home" href="../index.html" aria-label="Vai alla Home">
+        <div class="brand-logo">
+          <img src="../assets/img/logo.png" alt="Legacy Dev logo" />
+        </div>
+        <div class="brand-info">
+          <div class="subtitle">Legacy&nbsp;Dev</div>
+        </div>
+      </a>
+      <nav>
+        <a class="nav-btn" data-target="home" href="../index.html">Home</a>
+        <a class="nav-btn" data-target="about" href="chisono.html">Chi&nbsp;sono</a>
+        <a class="nav-btn" data-target="legacy" href="legacy-dev.html">Legacy&nbsp;Dev</a>
+        <a class="nav-btn" data-target="skills" href="competenze.html">Competenze</a>
+        <a class="nav-btn active" data-target="portfolio" href="portfolio.html">Portfolio</a>
+        <a class="nav-btn" data-target="awards" href="riconoscimenti.html">Riconoscimenti</a>
+        <a class="nav-btn" data-target="contact" href="contatto.html">Contatto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="portfolio" class="page active">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">
+          <i data-lucide="sparkles"></i>
+          <span>Portfolio</span>
+        </div>
+        <h2 class="section-title">Progetti divisi per ambito e stato</h2>
+      </div>
+
+      <div class="portfolio-section reveal">
+        <div class="portfolio-section-header">
+          <span>Concept / Game Design</span>
+          <p>Idee narrative e gameplay, presentate senza rivelare struttura interna o soluzioni specifiche.</p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="glass-card highlight project-card reveal">
+            <div class="project-meta">
+              <div class="project-tag">Single&nbsp;Player&nbsp;Concept</div>
+              <div class="project-status">Concept protetto</div>
+            </div>
+            <h3 class="project-title">The New Martian Chronicles</h3>
+            <p class="project-desc">Concept narrativo sci-fi con focus su atmosfera, sopravvivenza e progressione ambientale.</p>
+            <div class="project-bullets">
+              <span>Game concept</span>
+              <span>Worldbuilding</span>
+              <span>In sviluppo creativo</span>
+            </div>
+          </div>
+          <div class="glass-card highlight project-card reveal">
+            <div class="project-meta">
+              <div class="project-tag">Narrative&nbsp;Concept</div>
+              <div class="project-status">Concept protetto</div>
+            </div>
+            <h3 class="project-title">I Remember You</h3>
+            <p class="project-desc">Concept emotivo e autoriale centrato su identità, memoria e coscienza artificiale.</p>
+            <div class="project-bullets">
+              <span>Narrativa</span>
+              <span>Direzione emotiva</span>
+              <span>In definizione</span>
+            </div>
+          </div>
+          <div class="glass-card highlight project-card reveal">
+            <div class="project-meta">
+              <div class="project-tag">Gameplay&nbsp;/&nbsp;Survival</div>
+              <div class="project-status">Prototipo / design</div>
+            </div>
+            <h3 class="project-title">Heatwaves Hustle</h3>
+            <p class="project-desc">Esperienza survival con attenzione a pressione ambientale, UX e sistemi leggibili.</p>
+            <div class="project-bullets">
+              <span>Gameplay systems</span>
+              <span>UX / HUD</span>
+              <span>Documentazione</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-section reveal">
+        <div class="portfolio-section-header">
+          <span>Programmazione / Tool</span>
+          <p>Progetti tecnici, dashboard e sistemi utili separati dai concept creativi.</p>
+        </div>
+        <div class="portfolio-grid portfolio-grid-compact">
+          <div class="glass-card highlight project-card reveal">
+            <div class="project-meta">
+              <div class="project-tag">Tools&nbsp;&amp;&nbsp;Panels</div>
+              <div class="project-status">In sviluppo</div>
+            </div>
+            <h3 class="project-title">Dashboard, rete e sistemi utili</h3>
+            <p class="project-desc">Pannelli e strumenti di supporto per organizzazione, rete, servizi e controllo tecnico.</p>
+            <div class="project-bullets">
+              <span>Dashboard</span>
+              <span>Homelab</span>
+              <span>Tooling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards page -->
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">© 2026 Legacy&nbsp;Dev.</div>
+      <div class="footer-right">
+        <a class="footer-link active" data-target="portfolio" href="portfolio.html">Portfolio</a>
+        <a class="footer-link" data-target="awards" href="riconoscimenti.html">Riconoscimenti</a>
+        <a class="footer-link" data-target="privacy" href="privacy-policy.html">Privacy policy</a>
+        <a href="https://forms.gle/FoJF86DdL9w9EpJKA" target="_blank" rel="noopener" class="footer-link">Form di contatto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
