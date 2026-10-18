@@ -36,6 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     el.classList.toggle('active', target === currentPage);
 
+    if (el.classList.contains('nav-btn')) {
+      if (target === currentPage) {
+        el.setAttribute('aria-current', 'page');
+      } else {
+        el.removeAttribute('aria-current');
+      }
+    }
+
     if (el.tagName.toLowerCase() === 'a') {
       el.setAttribute('href', url);
       return;
