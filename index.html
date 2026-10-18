@@ -2,12 +2,22 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Emanuele Gensabella - Legacy Dev: portfolio di game design, Unreal Engine, web e cybersecurity." />
+  <meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)" />
+  <link rel="canonical" href="https://portfolio.olimpolab.org/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Legacy Dev" />
+  <meta property="og:title" content="Portfolio - Emanuele Gensabella - Legacy Dev" />
+  <meta property="og:description" content="Emanuele Gensabella - Legacy Dev: portfolio di game design, Unreal Engine, web e cybersecurity." />
+  <meta property="og:url" content="https://portfolio.olimpolab.org/" />
+  <meta property="og:image" content="https://portfolio.olimpolab.org/assets/img/logo.png" />
   <title>Portfolio - Emanuele Gensabella - Legacy Dev</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" />
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/vendor/lucide-1.59.0.min.js" defer></script>
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body data-page="home">
   <div class="background">
@@ -50,11 +60,11 @@
             Gameplay, interfacce web e strumenti tecnici progettati con attenzione a estetica, logica e usabilità.
           </p>
           <div class="hero-actions">
-            <button class="btn btn-primary" data-target="portfolio">
+            <a class="btn btn-primary" data-target="portfolio" href="pages/portfolio.html">
               Entra nel portfolio
               <i data-lucide="arrow-right"></i>
-            </button>
-            <button class="btn btn-outline" data-target="contact">Contattami</button>
+            </a>
+            <a class="btn btn-outline" data-target="contact" href="pages/contatto.html">Contattami</a>
           </div>
           <button class="scroll-down" data-target="about">
             <i data-lucide="chevron-down"></i>
@@ -155,6 +165,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

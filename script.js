@@ -36,6 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     el.classList.toggle('active', target === currentPage);
 
+    if (el.classList.contains('nav-btn')) {
+      if (target === currentPage) {
+        el.setAttribute('aria-current', 'page');
+      } else {
+        el.removeAttribute('aria-current');
+      }
+    }
+
     if (el.tagName.toLowerCase() === 'a') {
       el.setAttribute('href', url);
       return;
@@ -45,6 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = url;
     });
   });
+
+  const activeNav = document.querySelector('nav .nav-btn.active');
+
+  if (activeNav && activeNav.scrollIntoView) {
+    // Sui telefoni il menu scorre: porta in vista la voce della pagina corrente.
+    activeNav.scrollIntoView({ block: 'nearest', inline: 'center' });
+  }
 
   const brandHome = document.getElementById('brand-home');
 
