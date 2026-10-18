@@ -16,7 +16,6 @@
   <title>Portfolio - Emanuele Gensabella - Legacy Dev</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" />
-  <script src="assets/vendor/lucide-1.59.0.min.js" defer></script>
   <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body data-page="home">
@@ -48,109 +47,69 @@
   </header>
 
   <main>
-    <section id="home" class="page active">
-      <div class="hero">
-        <div class="hero-content">
-          <div class="hero-kicker">Emanuele Gensabella / Legacy Dev</div>
-          <h1>
-            Esperienze interattive
-            <span class="gradient-text">tra design, codice e identità.</span>
-          </h1>
-          <p class="hero-intro">
-            Gameplay, interfacce web e strumenti tecnici progettati con attenzione a estetica, logica e usabilità.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" data-target="portfolio" href="pages/portfolio.html">
-              Entra nel portfolio
-              <i data-lucide="arrow-right"></i>
-            </a>
-            <a class="btn btn-outline" data-target="contact" href="pages/contatto.html">Contattami</a>
-          </div>
-          <button class="scroll-down" data-target="about">
-            <i data-lucide="chevron-down"></i>
-            <span>Scopri il percorso</span>
-          </button>
-        </div>
-        <div class="hero-image">
-          <!-- Copper coloured blur behind the logo card -->
-          <div class="blur-copper"></div>
-          <!-- Logo card with gradient border and glass effect -->
-          <div class="logo-card">
-            <div class="logo-card-overlay"></div>
-            <div class="logo-inner">
-              <!-- Use the PNG logo for compatibility -->
-              <img src="assets/img/logo.png" alt="Legacy Dev logo" />
-            </div>
-          </div>
+    <section id="home" class="scene scene-hero">
+      <div class="hero-content">
+        <p class="hero-kicker">Emanuele Gensabella / Legacy Dev</p>
+        <h1>
+          <span class="line"><span>Esperienze interattive</span></span>
+          <span class="line gradient-text"><span>tra design, codice e identità.</span></span>
+        </h1>
+        <p class="hero-intro">
+          Gameplay, interfacce web e strumenti tecnici progettati con attenzione a estetica, logica e usabilità.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-target="portfolio" href="pages/portfolio.html">Entra nel portfolio <span aria-hidden="true">→</span></a>
+          <a class="btn btn-outline" data-target="contact" href="pages/contatto.html">Contattami</a>
         </div>
       </div>
+      <a class="scroll-down" href="#ambiti">Scorri <span aria-hidden="true">↓</span></a>
+    </section>
 
-      <div class="capabilities-overview">
-        <div class="capabilities-heading">
-          <span>Ambiti</span>
-        </div>
-        <div class="hero-features">
-          <div class="feature-card">
-            <div class="feature-icon"><i data-lucide="gamepad-2"></i></div>
-            <div>
-              <div class="feature-title">Unreal Engine</div>
-              <div class="feature-text">Gameplay, UI, prototipi</div>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i data-lucide="layout-template"></i></div>
-            <div>
-              <div class="feature-title">Game Design</div>
-              <div class="feature-text">GDD, loop, puzzle</div>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i data-lucide="book-open"></i></div>
-            <div>
-              <div class="feature-title">Worldbuilding</div>
-              <div class="feature-text">Narrativa e concept</div>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i data-lucide="monitor-smartphone"></i></div>
-            <div>
-              <div class="feature-title">Web &amp; UI</div>
-              <div class="feature-text">Portfolio e interfacce</div>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i data-lucide="code-2"></i></div>
-            <div>
-              <div class="feature-title">Programming</div>
-              <div class="feature-text">Python, Java, C++, PHP</div>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i data-lucide="shield-check"></i></div>
-            <div>
-              <div class="feature-title">Cybersecurity</div>
-              <div class="feature-text">Analisi e hardening</div>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i data-lucide="server"></i></div>
-            <div>
-              <div class="feature-title">Infrastructure</div>
-              <div class="feature-text">Homelab e networking</div>
-            </div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i data-lucide="panel-top"></i></div>
-            <div>
-              <div class="feature-title">Tools</div>
-              <div class="feature-text">Dashboard e pannelli</div>
-            </div>
-          </div>
-        </div>
+    <section id="ambiti" class="scene">
+      <div class="scene-head reveal">
+        <span class="scene-num">01</span>
+        <h2 class="scene-title">Ambiti</h2>
+      </div>
+      <ul class="ambiti-list">
+        <li class="reveal"><span class="row-title">Unreal Engine</span><span class="row-text">Gameplay, UI, prototipi</span></li>
+        <li class="reveal"><span class="row-title">Game Design</span><span class="row-text">GDD, loop, puzzle</span></li>
+        <li class="reveal"><span class="row-title">Worldbuilding</span><span class="row-text">Narrativa e concept</span></li>
+        <li class="reveal"><span class="row-title">Web &amp; UI</span><span class="row-text">Portfolio e interfacce</span></li>
+        <li class="reveal"><span class="row-title">Programming</span><span class="row-text">Python, Java, C++, PHP</span></li>
+        <li class="reveal"><span class="row-title">Cybersecurity</span><span class="row-text">Analisi e hardening</span></li>
+        <li class="reveal"><span class="row-title">Infrastructure</span><span class="row-text">Homelab e networking</span></li>
+        <li class="reveal"><span class="row-title">Tools</span><span class="row-text">Dashboard e pannelli</span></li>
+      </ul>
+    </section>
+
+    <section class="scene">
+      <div class="scene-head reveal">
+        <span class="scene-num">02</span>
+        <h2 class="scene-title">Progetti</h2>
+      </div>
+      <div class="project-rows">
+        <a class="project-row reveal" href="pages/portfolio.html">
+          <span class="row-big">The New Martian Chronicles</span>
+          <span class="row-meta">Concept narrativo sci-fi</span>
+        </a>
+        <a class="project-row reveal" href="pages/portfolio.html">
+          <span class="row-big">I Remember You</span>
+          <span class="row-meta">Identità, memoria, coscienza artificiale</span>
+        </a>
+        <a class="project-row reveal" href="pages/portfolio.html">
+          <span class="row-big">Heatwaves Hustle</span>
+          <span class="row-meta">Survival, UX e sistemi leggibili</span>
+        </a>
       </div>
     </section>
 
-    <!-- About page -->
+    <section class="scene scene-cta">
+      <div class="scene-head reveal">
+        <span class="scene-num">03</span>
+        <h2 class="scene-title">Contatto</h2>
+      </div>
+      <a class="cta-big reveal" href="pages/contatto.html">Hai un'idea precisa? <span>Parliamone.</span></a>
+    </section>
   </main>
 
   <footer>
