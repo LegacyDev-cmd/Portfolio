@@ -54,6 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  const activeNav = document.querySelector('nav .nav-btn.active');
+
+  if (activeNav && activeNav.scrollIntoView) {
+    // Sui telefoni il menu scorre: porta in vista la voce della pagina corrente.
+    activeNav.scrollIntoView({ block: 'nearest', inline: 'center' });
+  }
+
   const brandHome = document.getElementById('brand-home');
 
   if (brandHome && brandHome.tagName.toLowerCase() !== 'a') {
